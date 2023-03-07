@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GWF Vis App Demo</title>
     <script type="module" src="./gwf-vis-host.js"></script>
+    <script type="module" defer>
+      const visHost = document.querySelector("gwf-vis-host");
+      const config = await fetch("./config.json").then((response) =>
+        response.json()
+      );
+      visHost.config = config;
+    </script>
   </head>
   <body>
     <gwf-vis-host></gwf-vis-host>
