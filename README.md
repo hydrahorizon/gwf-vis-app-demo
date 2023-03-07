@@ -12,3 +12,7 @@ This is a minimal demo of creating a GWF vis app.
   - `data-provider.plugin.js` is a demo plugin that registered as a data provider. When the data is queried, it mocks some waiting time and returns an array of number.
   - `shared-state.plugin.js` is a demo plugin that has a shared value across plugins. When the shared value is updated, all the instances of this plugin would be updated with the new value.
   - `tile-layer.plugin.js` is a demo plugin that adds a map layer into the vis. It also shows how the props from the config file is passed in and used.
+
+## How to Start
+
+Just host the project directory using any HTTP server as a static site and then access it using the browser.
