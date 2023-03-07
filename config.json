@@ -6,7 +6,8 @@
   "imports": {
     "demo.tile-layer": "./plugins/tile-layer.plugin.js",
     "demo.data-provider": "./plugins/data-provider.plugin.js",
-    "demo.data-fetcher": "./plugins/data-fetcher.plugin.js"
+    "demo.data-fetcher": "./plugins/data-fetcher.plugin.js",
+    "demo.shared-state": "./plugins/shared-state.plugin.js"
   },
   "plugins": [
     {
@@ -41,6 +42,14 @@
     },
     {
       "import": "demo.data-fetcher",
+      "container": "sidebar"
+    },
+    {
+      "import": "demo.shared-state",
+      "container": "sidebar"
+    },
+    {
+      "import": "demo.shared-state",
       "container": "sidebar"
     }
   ]
