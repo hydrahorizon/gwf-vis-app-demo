@@ -5,7 +5,7 @@ This is a minimal demo of creating a GWF vis app.
 ## File Structure
 
 - `index.html` is the entry point of the project.
-- `gwf-vis-host.js` is the library to be imported from `index.html`. After imported, a `<gwf-vis-host>` HTML tag can be used and it will accept a property `config`.
+- `gwf-vis-host.js` is the library to be imported by `index.html`. After imported, a `<gwf-vis-host>` HTML tag can be used and it will accept a property `config`.
 - `config.json` is a demo config file that is fetched by a script from `index.html` and loaded into the `gwf-vis-host` element.
 - `plugins/` is a directory that contians demo plugins.
   - `data-fetcher.plugin.js` is a demo plugin that fetch and display the data from the data provider.
@@ -16,3 +16,9 @@ This is a minimal demo of creating a GWF vis app.
 ## How to Start
 
 Just host the project directory using any HTTP server as a static site and then access it using the browser.
+
+If changes of the code are not applied after refreshing the page, disabling the cache in the HTTP server config might be helpful. For example, if NPM `http-server` is used as the dev server, add `-c-1` to set the cache time to -1 second.
+
+```sh
+npx http-server -c-1
+```
