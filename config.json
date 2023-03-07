@@ -4,7 +4,9 @@
     "zoom": 3
   },
   "imports": {
-    "demo.tile-layer": "./plugins/tile-layer.plugin.js"
+    "demo.tile-layer": "./plugins/tile-layer.plugin.js",
+    "demo.data-provider": "./plugins/data-provider.plugin.js",
+    "demo.data-fetcher": "./plugins/data-fetcher.plugin.js"
   },
   "plugins": [
     {
@@ -32,6 +34,14 @@
           "opacity": 0.5
         }
       }
+    },
+    {
+      "import": "demo.data-provider",
+      "container": "sidebar"
+    },
+    {
+      "import": "demo.data-fetcher",
+      "container": "sidebar"
     }
   ]
 }
